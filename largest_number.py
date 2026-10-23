@@ -1,15 +1,8 @@
-# Largest Number
+numbers = [10, 25, 15, 40, 5]
+largest = numbers[0] 
 
-a = [10, 20, 5, 8, 15]
-
-largest = a[0]
-second = a[0]
-
-for n in a:
+for n in numbers:
     if n > largest:
-        second = largest
         largest = n
-    elif n > second and n != largest:
-        second = n
 
-print(second)
+print(largest)
